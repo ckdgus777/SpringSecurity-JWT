@@ -39,6 +39,10 @@ spring:
       detection-strategy: annotated
 
 jwt:
-  header: Authorization
   secret: SpringSecurityPlusJsonWebTokenTestProjectForStudySpringSecurityPlusJsonWebTokenTestProjectForStudy
-  access-token-validity-in-seconds: 600 # 10 min
+  access-token-validity-times: 600000 # 10 min
+
+server:
+  servlet:
+    encoding:
+      force-response: true
